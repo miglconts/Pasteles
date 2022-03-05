@@ -1,59 +1,272 @@
 body {
-    background-color: rgb(247, 255, 245);
-    font-family: Helvetica, Courier, sans-serif;
-    line-height: 1.5rem;
-    margin: 0;
+  background-color: rgb(247, 255, 245);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+  margin: 0;
 }
 
 p {
-    margin-bottom: 1.9rem;
+  margin-bottom: 1.9rem;
 }
 
 .container {
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
-h1 {
-    font-size: 2rem;
-    line-height: 1.5rem;
+section {
+  margin: 1rem;
 }
-
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .header {
-    background-color: #6C29FF;
-    color: #89EFC8;
-    padding: .5rem;
+  background-color: #6c29ff;
+  color: #89efc8;
+  padding: 0.5rem;
 }
 
-    .header a {
-        color: #89EFC8;
-        text-decoration: none;
-    }
+.header a {
+  color: #89efc8;
+  text-decoration: none;
+}
 
 .logo-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation ul {
-    margin:0 ;
-    padding: 0;
-    list-style: none;
-}   
-    .navigation ul li {
-        display: inline-block;
-    }
-    .navigation ul li a {
-            display: block;
-            padding: 0.5rem 1rem;
-            
-        }
-        .navigation ul li a:hover {
-            display: block;
-            border-radius: 10px;
-            background:#89EFC8 ;
-            color: #6C29FF ; 
-            text-decoration:solid;           
-        }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li {
+  display: inline-block;
+}
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.navigation ul li a:hover {
+  display: block;
+  border-radius: 10px;
+  background: #89efc8;
+  color: #6c29ff;
+  text-decoration: solid;
+  font-weight: 600;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 10rem auto;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6c29ff;
+  color: #89efc8;
+  padding: 0.1rem;
+}
+
+.nav-container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nav-container p {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 100;
+  line-height: 1rem;
+}
+
+.sabores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-weight: 600;
+  color: #6c29ff;
+  margin-bottom: 0;
+}
+h2 {
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+  color: #6c29ff;
+}
+.sabor {
+  background-color: #6c29ff;
+  color: #89efc8;
+  width: auto;
+  padding: 0.3rem 0.8rem;
+  margin: 0.3rem;
+}
+
+.imagenesSabor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.imagenesSabor div {
+  width: 20rem;
+  height: 20rem;
+}
+.imagenesSabor p {
+  background-color: #6c29ff;
+  color: #89efc8;
+  width: auto;
+  padding: 0.5rem 0.8rem;
+  margin: 0;
+  text-align: center;
+}
+.Fresas {
+  float: left;
+  background: url("Images/pastel-1.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+.Moka {
+  float: left;
+  background: url("Images/pastel-2.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+.TresLeches {
+  float: left;
+  background: url("Images/pastel-3.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+.Cafe {
+  float: left;
+  background: url("Images/pastel-4.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+.Chocolates {
+  float: left;
+  background: url("Images/pastel-5.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+.Cajeta {
+  float: left;
+  background: url("Images/pastel-6.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+.Vainilla {
+  float: left;
+  background: url("Images/pastel-7.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+.Pina {
+  float: left;
+  background: url("Images/pastel-8.jpg");
+  background-size: cover;
+  margin: 1rem 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #6c29ff;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+textarea {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 100px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  resize: none;
+  border: 2px solid #6c29ff;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #6c29ff;
+  border: none;
+  border-radius: 0.5rem;
+  color: #89efc8;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 10px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.botones {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tabla{
+    display: flex;
+}
+
+table, th, td {
+    text-align: center;
+    margin-top: 1rem;
+    color: #6c29ff;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 1rem 2rem;
+}
+.tablaSabor {
+    width: 100%;
+    table-layout: fixed;
+}
+
+tr:nth-child(even) {
+    background-color: #6d29ff1c;
+}
+th{
+    background-color: #6c29ff;
+    color: #89efc8;
+    font-weight: 600;
+    font-size: large;
+    border-color: #6c29ff;
+}
+
+td {
+    font-weight: 100;
+    font-size: small;
+    line-height: 1.2rem;
+}
+.pedidoTabla{
+    table-layout: none;
+}

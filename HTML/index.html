@@ -1,54 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pasteleria Capitalista</title>
-    <link href="style.css" rel="stylesheet">
-</head>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+    </style>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container logo-nav-container">
-            <a href="#">
-                <img src="Images/Pasteleria.svg" alt="Pasteleria Capitalista" width="120">
-            </a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Pedidos</a></li>
-                    <li><a href="#">Admin</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container logo-nav-container">
+        <a href="index.html">
+          <img
+            src="Images/Pasteleria.svg"
+            alt="Pasteleria Capitalista"
+            width="120"
+          />
+        </a>
+        <nav class="navigation">
+          <ul>
+            <!-- <li><a href="#">Contacto</a></li> -->
+            <li><a href="#Pedido">Pedido</a></li>
+            <li><a href="Pastelero.html">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
-        <h1>Sabores</h1>
-        <input type="checkbox" id="sabor1" name="sabor" value="Fresas con crema">
-        <label for="sabor1"> Fresas con crema </label><br>
-        <input type="checkbox" id="sabor1" name="sabor" value="Moka">
-        <label for="sabor1"> Moka </label><br>
-        <input type="checkbox" id="sabor1" name="sabor" value="Tres leches">
-        <label for="sabor1"> Tres leches </label><br>
-        <input type="checkbox" id="sabor1" name="sabor" value="Cafe">
-        <label for="sabor1"> Café </label><br>
-        <input type="checkbox" id="sabor1" name="sabor" value="Chocolate">
-        <label for="sabor1"> Chocolate </label><br>
-        <input type="checkbox" id="sabor1" name="sabor" value="Cajeta">
-        <label for="sabor1"> Cajeta </label><br>
-        <input type="checkbox" id="sabor1" name="sabor" value="Vainilla">
-        <label for="sabor1"> Vainilla </label><br>
-        <input type="checkbox" id="sabor1" name="sabor" value="Piña">
-        <label for="sabor1"> Piña </label><br>
-    </main>
+      <!-- Imagenes de sabores -->
+      <h1>Sabores</h1>
+      <section class="imagenesSabor">
+        <div class="Fresas"><p>Fresas</p></div>
+        <div class="Moka"><p>Moka</p></div>
+        <div class="TresLeches"><p>Tres leches</p></div>
+        <div class="Cafe"><p>Café</p></div>
+        <div class="Chocolates"><p>Chocolates</p></div>
+        <div class="Cajeta"><p>Cajeta</p></div>
+        <div class="Vainilla"><p>Vainilla</p></div>
+        <div class="Pina"><p>Piña</p></div>
+        <!-- Imagenes de sabores -->
+      </section>
+      <!-- Formulario -->
+      <h1 id="Pedido">Pedido</h1>
+      <section>
+        <h2>Nombre</h2>
+        <label for="sabor1">
+          <input
+            type="text"
+            id="sabor1"
+            name="sabor"
+            placeholder="Nombre"
+          /> </label
+        ><br />
+        <h2>Dirección</h2>
+        <label for="sabor1">
+          <input
+            type="text"
+            id="sabor1"
+            name="sabor"
+            placeholder="Dirección"
+          /> </label
+        ><br />
+        <h2>Número de Telefono</h2>
+        <label for="sabor1">
+          <input
+            type="number"
+            id="sabor1"
+            name="sabor"
+            placeholder="Número de Telefono"
+          /> </label
+        ><br />
+        <h2>Correo</h2>
+        <label for="sabor1">
+          <input
+            type="email"
+            id="sabor1"
+            name="sabor"
+            placeholder="Email"
+          /> </label
+        ><br />
+        <h2>Dellates</h2>
+        <textarea placeholder="Detalles de pedido"> </textarea><br />
 
-    <footer class="footer">
-        <div class="container">
-            <p>Miguel Angel Contreras <br>killetter.com</p>
+        <!-- sabores y decoraciones -->
+        <h2>Sabores</h2>
+        <div class="sabores">
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Fresas con crema"
+              />
+              Fresas $200 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Moka" />
+              Moka $220 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Tres leches"
+              />
+              Tres leches $290 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Cafe" />
+              Café $190 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Chocolate"
+              />
+              Chocolate $200 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Cajeta" />
+              Cajeta $220 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Vainilla"
+              />
+              Vainilla $250 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Piña" />
+              Piña $190 </label
+            ><br />
+          </div>
         </div>
+        <h2>Decoraciones</h2>
+        <div class="sabores">
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Fresas con crema"
+              />
+              Chispas </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Moka" />
+              Frutas $90 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Tres leches"
+              />
+              Flores $150 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Cafe" />
+              Dulces $50 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Chocolate"
+              />
+              Figuras $150 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Cajeta" />
+              Galletas $50 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input
+                type="checkbox"
+                id="sabor1"
+                name="sabor"
+                value="Vainilla"
+              />
+              Globos $120 </label
+            ><br />
+          </div>
+          <div class="sabor">
+            <label for="sabor1">
+              <input type="checkbox" id="sabor1" name="sabor" value="Piña" />
+              Helado $90 </label
+            ><br />
+          </div>
+        </div>
+        <!-- sabores y decoraciones -->
+        <!-- botones-->
+        <div class="botones">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar" />
+        </div>
+        <!-- botones -->
+      </section>
+      <!-- Formulario -->
+    </main>
+    <br />
+    <footer class="footer">
+      <div class="nav-container">
+        <p> Circuito Juan Pablo, Col. Arboledas, Puebla, C.P.91063 <br>
+            Tel. 22213453455 Horario de atención: 9:00 a 18:00</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
